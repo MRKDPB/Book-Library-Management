@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BT_Labs</title>
+    <style>
+      #bg {
+        background-image: url("/static/home.jpg");
+        height: 100vh;
+        font-family: Verdana;
+        background-repeat: no-repeat;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        border-radius: 20%;
+
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+      .container > div {
+        width: fit-content;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: 0 auto;
+        padding: 15px;
+      }
+      p {
+        margin-top: -8px;
+      }
+
+      img {
+        width: 100px;
+        margin: 0 auto;
+      }
+
+      button {
+        width: fit-content;
+        height: 35px;
+        font-size: 20px;
+        border-color: lightblue;
+        margin: 0 auto;
+      }
+      #headline {
+        background-color: rgba(0, 0, 20, 0.8);
+      }
+    </style>
+  </head>
+
+  <body id="bg">
+    <div class="container">
+      <div id="headline">
+        <h1>
+          <strong>Read, Write and Grow!</strong>
+        </h1>
+        <p>Your Own Bookstore!</p>
+      </div>
+      <br />
+      <div>
+        <img src="static/giphy.gif" />
+
+        <br />
+        <a href="/admin/Mybooks/book/">
+          <button><b>Admin</b></button>
+        </a>
+        <br /><br />
+        <a href="/admin/doc">
+          <button><b>Documentation</b></button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
